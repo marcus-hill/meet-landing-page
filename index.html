@@ -5,27 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-
-  Download v1.3
-  What is it?
-
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3
+  <header>
+    <img src="assets/logo.svg" alt="Meet Logo" class="logo">
+    <div class="photos-holder">
+      <img class="left" src="assets/desktop/image-hero-left.png" alt="Selection of profile pictures">
+      <img class="right" src="assets/desktop/image-hero-right.png" alt="Selection of profile pictures">
+    </div>
+    <h1 class="title">Group Chat for Everyone</h1>
+    <p class="main-description">
+      Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+    </p>
+    <button class="main-button download-top">Download <span class="version1"> v1.3</span></button>
+    <button class="main-button what-is">What is it?</button>
+  </header>
+  <main>
+    <div class="divider-holder">
+      <hr class="divider">
+      <div class="divider-number"><p>01</p></div>
+    </div>
+    
+    <section class="smarter-meetings">
+      <div class="image-gallery">
+        <img src="assets/desktop/image-woman-in-videocall.jpg" alt="Woman looking into a laptop on a video call">
+        <img src="assets/desktop/image-women-videochatting.jpg" alt="Three women looking at a smart phone video chatting">
+        <img src="assets/desktop/image-men-in-meeting.jpg" alt="Man looking at a laptop on a video meeting">
+        <img src="assets/desktop/image-man-texting.jpg" alt="A man sat down texting on a phone">
+      </div>
+      <p class="smarter-section-subheading">Built for modern use</p>
+      <h2 class="smarter-section-heading">Smarter meetings, all in one place</h2>
+      <p class="smarter-section-description">
+        Send messages, share files, show your screen, and record your meetings - all in one workspace. Control who can join in with invite-only team access,
+        data encryption, and data export.
+      </p>
+    </section>
+    <div class="divider-holder second-holder">
+      <hr class="divider second">
+      <div class="divider-number second-number"><p>01</p></div>
+    </div>
+    <section class="experience-together">
+      <h2 class="experience-section-heading">Experience more together</h2>
+      <p class="experience-section-description">
+        Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+      </p>
+      <button class="main-button download-bottom">Download <span class="version2"> v1.3</span></button>
+    </section>
+  </main>
 </body>
 </html>
