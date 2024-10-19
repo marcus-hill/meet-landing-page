@@ -84,7 +84,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
 }
 
 .logo {
@@ -97,6 +97,10 @@ header {
     align-content: center;
     margin: 4rem 0 3rem 0;
     min-width: 115%;
+}
+
+.heading-mobile {
+    text-align: center;
 }
 
 .title {
@@ -125,11 +129,16 @@ header {
     line-height: 150%;
     font-weight: 700;
     font-size: 1rem;
+    margin-right: 1.1rem;
 }
 
 .download-top {
     background-color: #4D96A9;
     margin-bottom: 1rem;
+}
+
+.download-top:hover {
+    background-color: #71C0D4;
 }
 
 .version1 {
@@ -140,6 +149,10 @@ header {
 .what-is {
     background-color: #855FB1;
     margin-bottom: 2rem;
+}
+
+.what-is:hover {
+    background-color: #B18BDD;
 }
 
 .divider {
@@ -240,7 +253,56 @@ header {
     margin-bottom: 4rem;
 }
 
+.download-bottom:hover {
+    background-color: #B18BDD;
+}
+
 .version2 {
     color: #D9B8FF;
     margin-left: 0.25rem;
+}
+
+.heading-desktop {
+    display: none;
+    text-align: center;
+    margin: 4.4375rem 4rem 0 4rem;
+    max-width: 35rem;
+}
+
+@media (min-width: 40rem) {
+    .photos-holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
+
+@media (min-width: 100rem) {
+    .heading-desktop {
+        display: inline-block;
+    }
+    .photos-holder {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .left, .right {
+        margin: 0 10rem;
+        max-width: 30rem;
+    }
+    .right {
+        padding-top: 6.2rem;
+    }
+    .heading-mobile {
+        display: none;
+    }
+    .image-gallery {
+        display: flex;
+        place-content: center;
+    }
 }
