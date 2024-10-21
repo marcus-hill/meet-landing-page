@@ -330,7 +330,8 @@ header {
     .image-gallery {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        margin: 0 9.3rem;
+        margin-left: 9.3rem;
+        margin-right: 9.3rem;
     }
     .smarter-meetings-text {
         max-width: 22rem;
