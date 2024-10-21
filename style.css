@@ -95,7 +95,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
-    margin: 4rem 0 3rem 0;
+    margin: 4rem 0 0rem 0;
     min-width: 115%;
 }
 
@@ -269,40 +269,85 @@ header {
     max-width: 35rem;
 }
 
-@media (min-width: 40rem) {
+.left, .right {
+    display: none;
+}
+
+.tablet {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 50rem) {
     .photos-holder {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
-    .left, .right {
-        width: 100%;
+    .smarter-meetings-text {
+        display: none;
+    }
+    .smarter-meetings {
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 80rem) {
+    .photos-holder {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+    }
     .heading-desktop {
         display: inline-block;
     }
-    .photos-holder {
-        display: flex;
-        flex-wrap: nowrap;
-        max-width: 100%;
-        justify-content: space-between;
-    }
     .left, .right {
+        display: inline-block;
         margin: 0 10rem;
         max-width: 30rem;
     }
+    .tablet {
+        display: none;
+    }
+    
     .right {
         padding-top: 6.2rem;
+    }
+    .smarter-meetings-text {
+        display: block;
     }
     .heading-mobile {
         display: none;
     }
-    .image-gallery {
+    
+    .smarter-meetings {
         display: flex;
-        place-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .smarter-meetings-text {
+        max-width: 22rem;
+        text-align: center;
+    }
+    .experience-together {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 6rem 0 3.5rem 0;
+    }
+    .experience-section-description {
+        max-width: 19.18rem;
+        text-align: left;
+    }
+    .experience-section-heading {
+        font-size: 2.5rem;
+        text-align: left;
+        max-width: 20rem;
     }
 }
