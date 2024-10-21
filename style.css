@@ -267,6 +267,7 @@ header {
     text-align: center;
     margin: 4.4375rem 4rem 0 4rem;
     max-width: 35rem;
+    min-width: 30rem;
 }
 
 .left, .right {
