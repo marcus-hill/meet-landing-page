@@ -288,17 +288,19 @@ header {
 }
 
 @media (min-width: 80rem) {
+    header {
+        overflow: hidden;
+    }
     .heading-desktop {
         display: inline-block;
-        margin: 0;
     }
     .photos-holder {
         display: flex;
-        min-width: auto;
+        justify-content: space-around;
     }
     .left, .right {
         display: inline;
-        min-width: auto;
+        /* margin: 0 2rem; */
     }
     .tablet {
         display: none;
