@@ -85,6 +85,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    justify-content: center;
 }
 
 .logo {
@@ -284,33 +285,24 @@ header {
         justify-content: space-between;
         align-items: center;
     }
-    .smarter-meetings-text {
-        display: none;
-    }
-    .smarter-meetings {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 @media (min-width: 80rem) {
-    .photos-holder {
-        display: flex;
-        max-width: 100%;
-        justify-content: center;
-    }
     .heading-desktop {
         display: inline-block;
+        margin: 0;
+    }
+    .photos-holder {
+        display: flex;
+        min-width: auto;
     }
     .left, .right {
-        display: inline-block;
-        margin: 0 10rem;
-        max-width: 30rem;
+        display: inline;
+        min-width: auto;
     }
     .tablet {
         display: none;
     }
-    
     .right {
         padding-top: 7.2rem;
     }
